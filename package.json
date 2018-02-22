@@ -1,0 +1,35 @@
+{
+	"name": "metalsmith-del",
+	"version": "1.0.0-1",
+	"description": "Delete files and folders using globs.",
+	"license": "MIT",
+	"repository": "florianb/metalsmith-del",
+	"author": {
+		"name": "Florian Breisch",
+		"email": "florian.breisch@mindkeeper.solutions",
+		"url": "mindkeeper.solutions"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		""
+	],
+	"dependencies": {
+		"del": "^3.0.0",
+		"multimatch": "^2.1.0"
+	},
+	"devDependencies": {
+		"ava": "^0.20.0",
+		"xo": "^0.18.2"
+	},
+	"xo": {
+		"semicolon": false
+	}
+}
