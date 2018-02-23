@@ -2,7 +2,7 @@
 
 > Delete files and folders using globs.
 
-Removes files matching the passed globs, using Sindre Sorhus' [del](https://github.com/sindresorhus/del), which protects you from deleting things outside the current working directory.
+Removes files and folders matching the passed globs, using Sindre Sorhus' [multimatch](https://github.com/sindresorhus/multimatch). It also recognizes dot-files and -folders.
 
 ## Install
 
@@ -34,7 +34,7 @@ metalsmith(__dirname)
 
 Type: `Array` of `string`
 
-Array of glob to match files and directories against. Matching files and directories are being removed from the files-list as well as from disk.
+Array of glob to match files and directories against. Matching files and directories are being removed from the destination-folder.
 
 ## License
 
