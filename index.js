@@ -9,8 +9,10 @@ const globOptions = {
 
 module.exports = globs => {
 	return function (files, metalsmith, done) {
+		const filenames = multimatch(Object.keys(files), globs, globOptions)
+		filenames.forEach(i => delete files[i])
 		del.sync(globs, globOptions)
-		done(null, multimatch(files, globs, globOptions))
+
+		done(null, files)
 	}
 }
-

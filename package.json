@@ -1,6 +1,6 @@
 {
 	"name": "metalsmith-del",
-	"version": "1.0.0-1",
+	"version": "1.0.0-2",
 	"description": "Delete files and folders using globs.",
 	"license": "MIT",
 	"repository": "florianb/metalsmith-del",
